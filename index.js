@@ -1,49 +1,55 @@
-// console.log("some text")
-// // alert("step to fullstack development")
+let a;
+let b;
+let c;
+document.getElementById("b1").onclick = function(){
+    a = document.getElementById("aSide").value;
+    b = document.getElementById("bSide").value;
+    a = Number(a);
+    b = Number(b);
+    if (a <= 0 || b <= 0){
+        document.getElementById("resultC").innerHTML = "O'yin qilmang, ukaxon!"
+    }else{
+        c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+        document.getElementById("resultC").innerHTML = "c tomon: " + c
+    }
+}
 
-// window.alert("reklama")
+document.getElementById("yuza1").onclick = function(){
+    a = document.getElementById("aSide").value;
+    b = document.getElementById("bSide").value;
+    a = Number(a);
+    b = Number(b);
+    if (a <= 0 || b <= 0){
+        document.getElementById("resultC").innerHTML = "O'yin qilmang, ukaxon!"
+    }else{
+        c = a*b/2
+        document.getElementById("resultC").innerHTML = "Yuza: " + c
+    }
+}
 
-// let texts = "Some text moving";
+document.getElementById("b2").onclick = function(){
+    a = document.getElementById("aside").value;
+    c = document.getElementById("cside").value;
+    a = Number(a);
+    c = Number(c);
+    if (a >= c || a <= 0 || c <= 0){
+        document.getElementById("resultb").innerHTML = "O'yin qilmang, ukaxon!"
+    }else{
+        b = Math.sqrt(Math.pow(c,2) - Math.pow(a,2));
+        document.getElementById("resultb").innerHTML = "b tomon: " + b
+    }
+}
 
-// document.getElementById("m1").innerHTML = texts;
-
-// let ism = window.prompt("Ismingiz?")
-
-// document.getElementById("m1").innerHTML = "Ismingiz: " +  ism;
-
-// let username;
-
-// document.getElementById("myButton").onclick = function(){
-//     username = document.getElementById("myText").value;
-//     document.getElementById("myLabel").innerHTML = "Assalamu alaykum, " + username
-// }
-
-// let mynum = 5
-
-// console.log(mynum,typeof mynum)
-// mynum = Boolean(mynum)
-// console.log(mynum,typeof mynum)
-
-// let pages = "120"
-// pages  = pages + 1
-// console.log(typeof pages,pages)
-
-// pages = Number(pages)
-// pages ++
-// console.log(typeof pages,pages)
-
-// let is_open = false
-
-// console.log("state of opened: ",is_open)
-
-// is_open = String(is_open)
-
-// console.log("state of eponed: ",is_open, typeof is_open)
-const PI = 3.14;
-let radius;
-let lenofcicrle;
-document.getElementById("myButton").onclick = function(){
-    radius = document.getElementById("radius").value;
-    lenofcicrle = 2*PI*Number(radius);
-    document.getElementById("lenofcircle").innerHTML = lenofcicrle;
+document.getElementById("yuza2").onclick = function(){
+    a = document.getElementById("aside").value;
+    c = document.getElementById("cside").value;
+    a = Number(a);
+    c = Number(c);
+    if (a >= c || a <= 0 || c <= 0){
+        document.getElementById("resultb").innerHTML = "O'yin qilmang, ukaxon!"
+    }else{
+        b = Math.sqrt(Math.pow(c,2) - Math.pow(a,2));
+        b = b * a /2
+        document.getElementById("resultb").innerHTML = "Yuza: " + b
+    }
 }
