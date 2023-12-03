@@ -7,6 +7,9 @@
 ###
 <a href="https://zikr-qiling-birodar.netlify.app/">Second project</a>
 ###
+###
+<a href="https://dekabr3.netlify.app/">Third project</a>
+###
 
 <div align="left">
   <a href="https://www.linkedin.com/in/ulug-bek-tojimakhammatov-8434b125a/" target="_blank">
